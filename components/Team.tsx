@@ -61,7 +61,18 @@ export default function Team() {
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
-    <section id="team" className="py-24 lg:py-32 relative overflow-hidden bg-black">
+    <section id="team" className="py-24 lg:py-32 relative overflow-hidden">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/images/u8164484915_modern_minimalist_office_space_abstract_geometric_3a082b18-845f-471a-932b-dbf4d55ec3fb_0.png')",
+        }}
+      />
+
+      {/* Dark overlay for readability */}
+      <div className="absolute inset-0 bg-black/75" />
+
       {/* Background decorations */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />

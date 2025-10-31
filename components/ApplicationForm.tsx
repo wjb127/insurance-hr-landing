@@ -38,7 +38,18 @@ export default function ApplicationForm() {
   };
 
   return (
-    <section id="application" className="py-24 lg:py-32 relative overflow-hidden bg-black" ref={ref}>
+    <section id="application" className="py-24 lg:py-32 relative overflow-hidden" ref={ref}>
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/images/u8164484915_abstract_upward_growing_geometric_structures_grad_3b66d6db-fd82-4b92-8ead-5258ecb148c5_2.png')",
+        }}
+      />
+
+      {/* Dark overlay for readability */}
+      <div className="absolute inset-0 bg-black/75" />
+
       {/* Background decorations */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 right-1/3 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />

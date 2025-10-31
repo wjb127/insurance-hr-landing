@@ -20,10 +20,21 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-bg">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/images/u8164484915_modern_cityscape_at_night_with_blue_and_green_lig_3562bf8a-13a1-42cf-b37e-0143690e62de_3.png')",
+        }}
+      />
+
+      {/* Dark overlay for readability */}
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+
       {/* Animated gradient background */}
       <div
-        className="absolute inset-0 opacity-30"
+        className="absolute inset-0 opacity-20"
         style={{
           background: `radial-gradient(circle at ${mousePosition.x}% ${mousePosition.y}%, #3182f6 0%, transparent 50%)`,
           transition: "background 0.3s ease",

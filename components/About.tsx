@@ -60,12 +60,20 @@ export default function About() {
 
   return (
     <section id="about" className="py-24 lg:py-32 relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-[#0a0a0a] to-black" />
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/images/u8164484915_silhouettes_of_business_professionals_in_motion_g_373370b3-7550-4dec-91ea-a9ec6107d26f_2.png')",
+        }}
+      />
+
+      {/* Dark overlay for readability */}
+      <div className="absolute inset-0 bg-black/70" />
 
       {/* Grid pattern overlay */}
       <div
-        className="absolute inset-0 opacity-20"
+        className="absolute inset-0 opacity-10"
         style={{
           backgroundImage: `linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px)`,
           backgroundSize: '50px 50px',

@@ -61,8 +61,16 @@ export default function Recruitment() {
 
   return (
     <section id="recruitment" className="py-24 lg:py-32 relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-[#0a0a0a] to-black" />
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/images/u8164484915_futuristic_digital_portal_with_blue_and_green_ene_5aad64b2-ea23-46bc-b087-0a69a2cb169d_3.png')",
+        }}
+      />
+
+      {/* Dark overlay for readability */}
+      <div className="absolute inset-0 bg-black/70" />
 
       {/* Animated background elements */}
       <div className="absolute inset-0">
