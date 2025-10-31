@@ -32,28 +32,38 @@ export default function Hero() {
 
       {/* Animated particles */}
       <div className="absolute inset-0 overflow-hidden">
-        {[...Array(20)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-2 h-2 bg-gradient-to-r from-[#3182f6] to-[#00d255] rounded-full"
-            initial={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
-              scale: Math.random() * 0.5 + 0.5,
-            }}
-            animate={{
-              y: [null, Math.random() * window.innerHeight],
-              x: [null, Math.random() * window.innerWidth],
-              scale: [null, Math.random() * 0.5 + 0.5],
-            }}
-            transition={{
-              duration: Math.random() * 20 + 10,
-              repeat: Infinity,
-              repeatType: "reverse",
-            }}
-            style={{ opacity: 0.3 }}
-          />
-        ))}
+        {[...Array(20)].map((_, i) => {
+          const randomX = Math.random() * 100;
+          const randomY = Math.random() * 100;
+          const randomX2 = Math.random() * 100;
+          const randomY2 = Math.random() * 100;
+          const randomScale = Math.random() * 0.5 + 0.5;
+          const randomScale2 = Math.random() * 0.5 + 0.5;
+          const randomDuration = Math.random() * 20 + 10;
+
+          return (
+            <motion.div
+              key={i}
+              className="absolute w-2 h-2 bg-gradient-to-r from-[#3182f6] to-[#00d255] rounded-full"
+              initial={{
+                x: `${randomX}vw`,
+                y: `${randomY}vh`,
+                scale: randomScale,
+              }}
+              animate={{
+                y: [`${randomY}vh`, `${randomY2}vh`],
+                x: [`${randomX}vw`, `${randomX2}vw`],
+                scale: [randomScale, randomScale2],
+              }}
+              transition={{
+                duration: randomDuration,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+              style={{ opacity: 0.3 }}
+            />
+          );
+        })}
       </div>
 
       {/* Content */}
