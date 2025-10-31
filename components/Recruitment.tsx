@@ -227,7 +227,7 @@ export default function Recruitment() {
               여러분의 도전을 기다립니다. 함께 성장할 준비가 되셨나요?
             </p>
             <Link
-              href="#contact"
+              href="#application"
               className="inline-flex items-center justify-center gap-2 px-10 py-4 bg-gradient-to-r from-[#3182f6] to-[#00d255] text-white rounded-xl font-semibold hover-glow transition-all duration-300 hover:scale-105 text-lg"
             >
               입사지원하기

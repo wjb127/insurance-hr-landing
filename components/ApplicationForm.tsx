@@ -38,7 +38,7 @@ export default function ApplicationForm() {
   };
 
   return (
-    <section className="py-24 lg:py-32 relative overflow-hidden bg-black" ref={ref}>
+    <section id="application" className="py-24 lg:py-32 relative overflow-hidden bg-black" ref={ref}>
       {/* Background decorations */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 right-1/3 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />

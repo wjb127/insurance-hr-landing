@@ -179,7 +179,7 @@ export default function Team() {
             우리 팀과 함께 성장하고 싶으신가요?
           </p>
           <a
-            href="#recruitment"
+            href="#application"
             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#3182f6] to-[#00d255] text-white rounded-xl font-semibold hover-glow transition-all duration-300 hover:scale-105"
           >
             입사지원 하러가기

@@ -69,7 +69,7 @@ export default function Header() {
             transition={{ delay: 0.4 }}
           >
             <Link
-              href="#recruitment"
+              href="#application"
               className="px-6 py-2.5 rounded-lg bg-gradient-to-r from-[#3182f6] to-[#00d255] text-white font-medium hover-glow transition-all duration-300 hover:scale-105"
             >
               입사지원
@@ -121,7 +121,7 @@ export default function Header() {
                 transition={{ delay: 0.4 }}
               >
                 <Link
-                  href="#recruitment"
+                  href="#application"
                   className="block w-full px-6 py-3 rounded-lg bg-gradient-to-r from-[#3182f6] to-[#00d255] text-white font-medium text-center"
                   onClick={() => setIsOpen(false)}
                 >
